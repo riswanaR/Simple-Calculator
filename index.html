@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple-calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="div">
+        <h1>Simple-Calculator</h1>
+        <div class="container">
+        <table id="calc">
+         <tr>
+             <td colspan="6"><input type="text" name="display" id="display" ></td>
+         </tr>
+         <tr class="tr1">
+            <td class="td-clear"><input type="button" onclick="display.value = '' " value="c" class="td-clear"></td>
+            <td class="td-clear"><input type="button"  value="+/-" onclick="display.value += '+/-' " class="td-clear"></td>
+            <td class="td-clear"><input type="button"  value="%" onclick="display.value += '%' " class="td-clear"></td>
+            <td class="td-orange"><input type="button" value="/" onclick="display.value += '/' " ></td>
+         </tr>
+         <tr>
+             <td class="td-gray"><input type="button"  value="7" onclick="display.value += '7' " class="td-gray"></td>
+             <td class="td-gray"><input type="button"  value="8" onclick="display.value += '8' " class="td-gray"></td>
+             <td class="td-gray"><input type="button"  value="9" onclick="display.value += '9' "  class="td-gray"></td>
+             <td class="td-orange"><input type="button" value="*" onclick="display.value += '*' " ></td>
+         </tr>
+         <tr>
+             <td class="td-gray"><input type="button" value="4" onclick="display.value += '4' " class="td-gray"></td>
+             <td class="td-gray"><input type="button" value="5" onclick="display.value += '5' " class="td-gray"></td>
+             <td class="td-gray"><input type="button" value="6" onclick="display.value += '6' " class="td-gray"></td>
+             <td class="td-orange"><input type="button"  value="-" onclick="display.value += '-' " ></td>
+         </tr>
+         <tr>
+             <td class="td-gray"><input type="button" value="1" onclick="display.value += '1' " class="td-gray"></td>
+             <td class="td-gray"><input type="button" value="2" onclick="display.value += '2' " class="td-gray"></td>
+             <td class="td-gray"><input type="button" value="3" onclick="display.value += '3' " class="td-gray"></td>
+             <td class="td-orange"><input type="button"  value="+" onclick="display.value += '+' " ></td>
+         </tr>
+         <tr>
+            <td class="td-zero" colspan="2"><input type="button"  value="0" onclick="display.value += '0' "></td>
+            <td class="td-gray"><input type="button"  value="." onclick="display.value += '.' " class="td-gray"></td>
+            <td class="td-orange"><input type="button"  value="=" onclick="display.value = eval(display.value) " ></td>
+         </tr>
+        </table>
+    </div>
+     </div>
+</body>
+</html>
